@@ -1,96 +1,217 @@
-.img-background{
-    position: relative;
-    height: 578px;
-    background-image: url(images/aboutUs-img.png);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    span{
-        position: absolute;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.1;
-        color: #fff;
-        top: 45px;
-        right: 61px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.aboutUs{
-    margin-top: 54px;
-    margin-left: 60px;
-    margin-right: 60px;
-    h3{
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 1.24;
-    }
-    p{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    p:first-child {
-        margin-top: 48px;
-    }
-    p:not(:first-child) {
-        margin-top: 24px;
-    }
-    span{
-        display: block;
-        margin-top: 46px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 29px;
-    }
-    a{
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GIMMEHOOP</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="aboutUs.css">
+	<!-- Подключаем шрифт Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
 
-.block-line-shadow{
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #D8D8D8;
-    margin-top: 68px !important;
-    margin-bottom: 73px !important;
-    .slider-cart{
-        margin-top: 34px !important;
-        margin-bottom: 33px !important;
-    }
-    h3{
-        font-weight: 900 !important;
-        font-size: 40px !important;
-    }
-}
+<body>
+	<!-- header -->
+	<header>
+		<!-- Полоска с промокодом -->
+		<div class="promo-bar">
+			<div>
+				BUY 2 GET 1 FREE <span class="code"> сode: </span> B2G1
+			</div>
+		</div>
 
-@media (max-width: 1100px){
-    h3{
-        font-size: 24px !important;
-    }
-    .img-background{
-        height: 400px;      
-        span{
-            top: 35px;
-            left: 40px;
-            right: 0;
-        }
-    }
-    .block-line-shadow {
-        h3{
-            font-size: 24px !important;
-        }
-        p {
-            margin: 0 auto 30px !important;
-            width: 395px;
-        }
-        margin-bottom: 0 !important;
-    }
-    .footer{
-        margin-top: 40px !important;
-    }
-}
+		<!-- Основной хедер -->
+		<nav class="navbar">
+			<div class="content">
+				<div class="header-container">
+
+                    <div class="burger-menu desktop-hidden">
+						<div class="burger-icon" onclick="toggleMenu()">
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						</div>
+						<div class="dropdown-menu mobile-hidden">
+						  <a href="#">HOME</a>
+						  <a href="#">SHOP</a>
+						  <a href="#">ABOUT US</a>
+						</div>
+					</div>
+
+					<div class="logo">
+						<img src="images/logo.png" alt="Logo">
+					</div>
+					<a class="mobile-hidden" href="#">HOME</a>
+					<div class="dropdown-shop mobile-hidden">
+						<div class="a-shop">
+							<a href="#">
+								<span>SHOP</span>
+								<img src="images/shop-vector.svg" alt="Logo">
+							</a>
+							<div class="dropdown-menu-shop">
+								<a href="#">Framed Canvas Collection</a>
+								<a href="#">Basketball Art Framed Hoops</a>
+								<a href="#">Surfboards</a>
+								<a href="#">Arts</a>
+							</div>
+						</div>
+					</div>
+					<a  class="mobile-hidden" href="#">ABOUT US</a>
+					<div class="nav-icons ">
+						<button class="search-btn mobile-hidden">
+							<img src="images/search.svg" alt="Logo">
+						</button>
+						<button class="cart-btn">
+							<div class="cart-and-circle">
+								<img src="images/cart.svg" alt="Logo">
+								<div>0</div>
+							</div>
+							<span class="mobile-hidden">$0.00</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- 1 блок -->
+    <div class="img-background">
+        <span>Home / About Us</span>
+    </div>
+
+    <!-- 2 блок -->
+    <div class="content">
+        <div class="aboutUs">
+            <h3>ABOUT US</h3>
+            <p>Welcome to GimmeHoop, a community of imaginative individuals passionate about unique and unconventional design. We are dedicated to delivering a remarkable customer experience that exceeds your expectations. Our team is obsessed with creating products that you will love, and we take great care to ensure that every product is of the highest quality and functionality.</p>
+            <p>We understand that finding the perfect decor piece for your home can be a challenging and time-consuming process. That’s why we have made it our mission to make the shopping experience with GimmeHoop as seamless and stress-free as possible. Our customer service team is always ready to assist you in any way we can, whether it’s answering questions about our products or helping you with the checkout process.</p>
+            <p>We take great pride in the unique designs of our handcrafted products, each created with meticulous attention to detail. Our functional and distinctive designs are intended to inspire self-expression and elevate your daily routine. We are committed to delivering products that not only meet but exceed your expectations.</p>
+            <p>Join our community of trendsetters and discover the pleasure of self-expression through our one-of-a-kind designs. Shop our handcrafted products today and experience the exceptional quality and service of GimmeHoop.</p>
+            <span>GimmeHoop LLC</span>
+            <a href="">Scottsdale, AZ | support@gimmehoop.com</a>
+        </div>
+    </div>
+
+    <div class="block-line-shadow">
+		<div class="content">
+			<div class="block-slider-chosen2">
+				
+				<div class="chosen-desc">
+					<h3 class="chosen-desc-home-h3">WE ARE DESIGNERS</h3>
+					<p class="mobile-hidden">Our designs intentionally inspire self-expression and add personality to your everyday routine. Join our trendsetting community and shop our one-of-a-kind products today.</p>
+				</div>
+				<div class="slider-cart">
+					<div class="swiper mySwiper">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				<p class="desktop-hidden">Our designs intentionally inspire self-expression and add personality to your everyday routine. Join our trendsetting community and shop our one-of-a-kind products today.</p>
+			</div>
+		</div>
+	</div>
+
+    <!-- footer -->
+    <div class="footer mobile-hidden">
+        <div class="content footer-content">
+            <div class="footer-menu">
+                <h3>MENU</h3>
+                <a href="">Home</a>
+                <a href="">Shop</a>
+                <a href="">
+                    <li>Framed Canvas Collection </li>
+                </a>
+                <a href="">
+                    <li>Basketball Art Framed Hoops </li>
+                </a>
+                <a href="">
+                    <li> Surfboards</li>
+                </a>
+                <a href="">
+                    <li>Arts</li>
+                </a>
+                <a href="">About Us</a>
+            </div>
+            <div class="footer-center">
+                <div class="contacts">
+                    <span>GIMMEHOOP</span>
+                    <a href="">support@gimmehoop.com</a>
+                    <div class="contacts-img">
+                        <a href=""><img src="images/facebook.svg" alt=""></a>
+                        <a href=""><img src="images/inst.svg" alt=""></a>
+                        <a href=""><img src="images/tt.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cart-copyright">
+                    <img src="images/card.png" alt="">
+                    <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <h3>POLICY</h3>
+                <a href="">Refund Policy</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">Shipping Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer desktop-hidden">
+        <div class="content footer-content">
+            <div class="contacts">
+                <span>GIMMEHOOP</span>
+                <a href="">support@gimmehoop.com</a>
+                <div class="contacts-img">
+                    <a href=""><img src="images/facebook.svg" alt=""></a>
+                    <a href=""><img src="images/inst.svg" alt=""></a>
+                    <a href=""><img src="images/tt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-center1">
+                <div class="footer-menu">
+                    <h3>MENU</h3>
+                    <a href="">Home</a>
+                    <a href="">Shop</a>
+                    <a href="">
+                        <li>Framed Canvas Collection </li>
+                    </a>
+                    <a href="">
+                        <li>Basketball Art Framed Hoops </li>
+                    </a>
+                    <a href="">
+                        <li> Surfboards</li>
+                    </a>
+                    <a href="">
+                        <li>Arts</li>
+                    </a>
+                    <a href="">About Us</a>
+                </div>
+                <div class="footer-policy">
+                    <h3>POLICY</h3>
+                    <a href="">Refund Policy</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Shipping Policy</a>
+                </div>
+            </div>
+            
+            <div class="cart-copyright">
+                <img src="images/card.png" alt="">
+                <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
