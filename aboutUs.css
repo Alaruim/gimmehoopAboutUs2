@@ -1,0 +1,96 @@
+.img-background{
+    position: relative;
+    height: 578px;
+    background-image: url(images/aboutUs-img.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    span{
+        position: absolute;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        color: #fff;
+        top: 45px;
+        right: 61px;
+    }
+}
+
+.aboutUs{
+    margin-top: 54px;
+    margin-left: 60px;
+    margin-right: 60px;
+    h3{
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.24;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    p:first-child {
+        margin-top: 48px;
+    }
+    p:not(:first-child) {
+        margin-top: 24px;
+    }
+    span{
+        display: block;
+        margin-top: 46px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 29px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+.block-line-shadow{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #D8D8D8;
+    margin-top: 68px !important;
+    margin-bottom: 73px !important;
+    .slider-cart{
+        margin-top: 34px !important;
+        margin-bottom: 33px !important;
+    }
+    h3{
+        font-weight: 900 !important;
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 1100px){
+    h3{
+        font-size: 24px !important;
+    }
+    .img-background{
+        height: 400px;      
+        span{
+            top: 35px;
+            left: 40px;
+            right: 0;
+        }
+    }
+    .block-line-shadow {
+        h3{
+            font-size: 24px !important;
+        }
+        p {
+            margin: 0 auto 30px !important;
+            width: 395px;
+        }
+        margin-bottom: 0 !important;
+    }
+    .footer{
+        margin-top: 40px !important;
+    }
+}
